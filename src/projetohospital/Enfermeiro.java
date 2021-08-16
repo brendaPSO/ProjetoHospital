@@ -12,10 +12,12 @@ package projetohospital;
 public class Enfermeiro extends Funcionario {
 
     public Enfermeiro() {
+        super.setProfissao("Enfermeiro");
     }
 
-    public Enfermeiro(String nome, String telefone, String email, String endereco, String cpf, String doencas, char sexo) {
+    public Enfermeiro(String nome, String telefone, String email, String endereco, String cpf, String doencas, String sexo) {
         super(nome, telefone, email, endereco, cpf, doencas, sexo);
+        super.setProfissao("Enfermeiro");
     }
     
 }

@@ -10,14 +10,15 @@ package projetohospital;
  * @author brend
  */
 public class Funcionario extends Cliente{
-    private String profissao;
+
+    private String profissao, senha;
 
     public Funcionario() {
     }
 
     public Funcionario
         (String nome, String telefone, String email, String endereco, 
-         String cpf, String doencas, char sexo) 
+         String cpf, String doencas, String sexo) 
     {
         super(nome, telefone, email, endereco, cpf, doencas, sexo);
     }
@@ -28,6 +29,14 @@ public class Funcionario extends Cliente{
 
     public void setProfissao(String profissao) {
         this.profissao = profissao;
+    }
+
+    public String getSenha() {
+        return senha;
+    }
+
+    public void setSenha(String senha) {
+        this.senha = senha;
     }
     
 }

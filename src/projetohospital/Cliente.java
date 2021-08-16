@@ -10,13 +10,12 @@ package projetohospital;
  * @author brend
  */
 public class Cliente {
-    private String nome, telefone, email, endereco, cpf, doencas;
-    private char sexo;
+    private String nome, telefone, email, endereco, cpf, doencas, sexo, status;
 
     public Cliente() {
     }
 
-    public Cliente(String nome, String telefone, String email, String endereco, String cpf, String doencas, char sexo) {
+    public Cliente(String nome, String telefone, String email, String endereco, String cpf, String doencas, String sexo) {
         this.nome = nome;
         this.telefone = telefone;
         this.email = email;
@@ -75,12 +74,20 @@ public class Cliente {
         this.doencas = doencas;
     }
     
-    public char getSexo() {
+    public String getSexo() {
         return sexo;
     }
 
-    public void setSexo(char sexo) {
+    public void setSexo(String sexo) {
         this.sexo = sexo;
+    }
+    
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
     
 }

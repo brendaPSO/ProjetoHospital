@@ -12,10 +12,12 @@ package projetohospital;
 public class Medico extends Funcionario{
 
     public Medico() {
+        super.setProfissao("Medico");
     }
 
-    public Medico(String nome, String telefone, String email, String endereco, String cpf, String doencas, char sexo) {
+    public Medico(String nome, String telefone, String email, String endereco, String cpf, String doencas, String sexo) {
         super(nome, telefone, email, endereco, cpf, doencas, sexo);
+        super.setProfissao("Medico");
     }
     
     
